@@ -23,6 +23,6 @@ public class CategoriaRessource {
 
     @RequestMapping(value = "{id}", method = RequestMethod.GET)
     public ResponseEntity<?> find(@PathVariable Integer id) {
-        return new ResponseEntity<>(categoriaService.buscar(id), HttpStatus.OK);
+        return new ResponseEntity<>(categoriaService.find(id), HttpStatus.OK);
     }
 }
